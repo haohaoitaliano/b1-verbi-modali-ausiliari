@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ripasso interattivo: dovere, potere e volere al passato prossimo."
+    />
+    <title>Verbi modali · Ripasso</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="#main" aria-label="好好意语首页">
+          <span class="brand-mark" aria-hidden="true">好</span>
+          <span><strong>好好意语</strong><small>italiano, un passo alla volta</small></span>
+        </a>
+        <div class="level-pill">A2–B1</div>
+      </header>
+
+      <main id="main">
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow">RIPASSO · PASSATO PROSSIMO</p>
+            <h1 id="page-title">Dovere, potere<br />e volere</h1>
+            <p class="hero-subtitle">Quando si usa l’ausiliare <strong>avere</strong> e quando <strong>essere</strong>?</p>
+            <a class="start-button" href="#parte-1">Inizia il ripasso <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <span class="orbit orbit-one"></span>
+            <span class="orbit orbit-two"></span>
+            <div class="verb-card card-dovere"><span>01</span><strong>dovere</strong></div>
+            <div class="verb-card card-potere"><span>02</span><strong>potere</strong></div>
+            <div class="verb-card card-volere"><span>03</span><strong>volere</strong></div>
+            <span class="spark spark-one">✦</span>
+            <span class="spark spark-two">✦</span>
+          </div>
+        </section>
+
+        <nav class="progress-card" aria-label="Avanzamento del ripasso">
+          <div class="progress-topline">
+            <span>Il tuo percorso</span>
+            <strong id="progress-label">0 / 3 parti</strong>
+          </div>
+          <div class="progress-track"><span id="progress-bar"></span></div>
+          <ol class="progress-steps">
+            <li class="is-current" data-progress="1"><span>1</span>Scegli</li>
+            <li data-progress="2"><span>2</span>Completa</li>
+            <li data-progress="3"><span>3</span>Traduci</li>
+          </ol>
+        </nav>
+
+        <section class="exercise-section" id="parte-1" data-section="choice" aria-labelledby="title-1">
+          <div class="section-heading">
+            <div class="section-number">01</div>
+            <div>
+              <p class="eyebrow">PARTE 1</p>
+              <h2 id="title-1">Scegli la forma corretta</h2>
+              <p>Leggi ogni frase e scegli la forma che suona giusta.</p>
+            </div>
+          </div>
+          <div class="question-list" id="choice-list"></div>
+          <div class="section-actions">
+            <p class="section-result" id="choice-result" aria-live="polite"></p>
+            <button class="submit-button" type="button" data-submit="choice">Controlla le risposte</button>
+          </div>
+        </section>
+
+        <section class="exercise-section is-locked" id="parte-2" data-section="fill" aria-labelledby="title-2">
+          <div class="lock-cover" aria-hidden="true"><span>✓</span>Completa prima la Parte 1</div>
+          <div class="section-heading">
+            <div class="section-number">02</div>
+            <div>
+              <p class="eyebrow">PARTE 2</p>
+              <h2 id="title-2">Completa</h2>
+              <p>Scrivi la forma completa al passato prossimo.</p>
+            </div>
+          </div>
+          <div class="question-list" id="fill-list"></div>
+          <div class="section-actions">
+            <p class="section-result" id="fill-result" aria-live="polite"></p>
+            <button class="submit-button" type="button" data-submit="fill">Controlla le risposte</button>
+          </div>
+        </section>
+
+        <section class="exercise-section is-locked" id="parte-3" data-section="translation" aria-labelledby="title-3">
+          <div class="lock-cover" aria-hidden="true"><span>✓</span>Completa prima la Parte 2</div>
+          <div class="section-heading">
+            <div class="section-number">03</div>
+            <div>
+              <p class="eyebrow">PARTE 3</p>
+              <h2 id="title-3">Traduci</h2>
+              <p>Traduci le frasi dal cinese all’italiano.</p>
+            </div>
+          </div>
+          <div class="question-list" id="translation-list"></div>
+          <div class="section-actions">
+            <p class="section-result" id="translation-result" aria-live="polite"></p>
+            <button class="submit-button" type="button" data-submit="translation">Controlla le risposte</button>
+          </div>
+        </section>
+
+        <section class="summary" id="summary" hidden aria-labelledby="summary-title">
+          <div class="confetti" aria-hidden="true">✦　●　✦　●　✦</div>
+          <p class="eyebrow">RIPASSO COMPLETATO</p>
+          <h2 id="summary-title">Hai ripassato gli ausiliari<br />con i verbi modali! 🎉</h2>
+          <div class="rule-card">
+            <h3>Ricorda:</h3>
+            <p class="rule-lead">👉 Guarda il verbo all’infinito.</p>
+            <div class="example-grid">
+              <div class="example-block">
+                <span class="example-tag avere">AVERE</span>
+                <p><strong>lavorare → avere</strong><br />Ho lavorato.<br /><span>→ Ho dovuto lavorare.</span></p>
+              </div>
+              <div class="example-block">
+                <span class="example-tag essere">ESSERE</span>
+                <p><strong>andare → essere</strong><br />Sono andata.<br /><span>→ Sono dovuta andare.</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="agreement-card">
+            <h3>⚠️ Con <em>essere</em>, il participio passato concorda con il soggetto:</h3>
+            <ul>
+              <li><span class="person-dot blue"></span>Marco <strong>è dovuto</strong> partire.</li>
+              <li><span class="person-dot coral"></span>Giulia <strong>è dovuta</strong> partire.</li>
+              <li><span class="person-dot blue double"></span>Marco e Luca <strong>sono dovuti</strong> partire.</li>
+              <li><span class="person-dot coral double"></span>Giulia e Anna <strong>sono dovute</strong> partire.</li>
+            </ul>
+          </div>
+          <p class="closing-message">Ora sai scegliere l’ausiliare giusto con <strong>dovere, potere e volere</strong> al passato prossimo. ✅</p>
+          <button class="restart-button" type="button" id="restart">Ricomincia il ripasso</button>
+        </section>
+      </main>
+
+      <footer><span>好好意语</span><span>Fatto con cura per imparare senza fretta.</span></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
